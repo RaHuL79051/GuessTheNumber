@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b5b6622958.js" crossorigin="anonymous"></script>
+    <title>Guess The number</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="fevicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Guess The number</h1>
+            <h2>Between 1 to 100.</h2>
+            <button onclick="showMenu();">Rules</button>
+            <button onclick="GoToGame();">Start the game</button>
+        </div>
+        <div class="rules">
+            <a href="" onclick="hideMenu();"><i class="fa-solid fa-xmark"></i></a>
+            <h2>Rules of the Games are simple.</h2>
+            <p>
+                <li class="short">Enter your Guesses in the input box and hit submit.</li>
+                <li class="short">You have 10 guesses.</li>
+                <li class="short">If you used up all then you loose.</li>
+                <li class="short">If you won we will restart the game.</li>
+                <li class="short">The number will be automatically generated.</li>
+            </p>
+            <button id="hidemenu" onclick="hideMenu();">Best of luck</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

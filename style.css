@@ -1,0 +1,113 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  background-color: #212121;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.content h1{
+  font-size: 3rem;
+  margin: 0 0 20px;
+}
+
+.content h2{
+  margin-bottom: 15px;
+}
+
+.content button{
+  padding: 10px;
+  font-size: 1.1rem;
+  border-radius: 4px;
+}
+
+.rules{
+  background-color: red;
+  position: absolute;
+  text-align: center;
+  height: auto;
+  width: 700px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px red;
+  display: none;
+}
+
+.rules h2{
+  font-size: 3rem;
+  margin: 20px 0;
+  margin-bottom: 30px;
+}
+
+.short{
+  font-size: 1.4rem;
+  list-style: none;
+  line-height: 30px;
+}
+
+.rules button{
+  padding: 10px;
+  font-size: 1rem;
+  margin: 20px 0;
+  border: none;
+  transition: all 0.4s;
+  border-radius: 4px;
+}
+
+.rules button:hover{
+  background-color: beige;
+  scale: 1.1;
+}
+
+.rules i{
+  position: absolute;
+  right: 4px;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+
+@media (max-width:480px) {
+  .content h1{
+    font-size: 2rem;
+  }
+
+  .rules{
+    width: auto;
+  }
+  .rules h2{
+    font-size: 1.8rem;
+  }
+  .short{
+    font-size: 1rem;
+  }
+  .rules button{
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+
+  .rules i{
+    font-size: 1.2rem;
+    right: 0px;
+    top: -4px;
+  }
+}
